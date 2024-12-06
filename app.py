@@ -121,6 +121,6 @@ def criar_vendas():
 
     return render_template('nova_venda.html')
 
-
+7
 if __name__ == '__main__':
     app.run(debug=True)

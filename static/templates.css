@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display:block;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: top;
+}
+
+div h1 {
+    text-align: center;
+}
+
+div li {
+    display:block;
+
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #f18fed;
+    display: block;
+    height: 120px;
+    font-size: 33px;
+    border: 2px solid black;
+
+}
+
+nav {
+    text-align: center;
+    background-color: #f18fed;
+    display: inline-block;
+    height: 2621px;
+    width: 170px;
+    font-size: 16px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+main {
+    width: 88vw;
+    display: inline-block;
+    background-color: #f8e4f7;
+    height: 2621px;
+}
+
+
+tabelas a:hover {
+    text-decoration: none;
+    color: #0b0000;
+}
+
+.cancelar {
+    text-decoration: none;
+    color: black;
+}
+
+.tabelas {
+    text-decoration: none;
+    color: white;
+}
+
+.card_itens:hover {
+    background-color: #d5cfcf;
+}
+
+.card_itens {
+    background-color: #fbbdfa;
+    text-align: center;
+    display: inline-block;
+    height: 190px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 16px;
+    float: left;
+    margin-left: 8px;
+    padding: 5px;
+}
+
+.palavras {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.cadastro {
+    background-color: #fbbdfa;
+    text-align: center;
+    display: inline-block;
+    height: 280px;
+    width: 260px;
+    border-radius: 10px;
+    margin-top: 105px;
+    margin-right: 40px;
+    font-size: 20px;
+    float: left;
+    margin-left: 410px;
+    padding: 65px;
+}
+
+.vet {
+   background-color: #fbbdfa;
+    text-align: center;
+    display: inline-block;
+    height: 295px;
+    width: 260px;
+    border-radius: 10px;
+    margin-top: 105px;
+    margin-right: 40px;
+    font-size: 19px;
+    float: left;
+    margin-left: 410px;
+    padding: 60px;
+}
+
+label,input {
+    display: block;
+    margin: 10px auto;
+}
+
+.cliente {
+    background-color: #fbbdfa;
+    text-align: center;
+    display: inline-block;
+    height: 280px;
+    width: 260px;
+    border-radius: 10px;
+    margin-top: 105px;
+    margin-right: 40px;
+    font-size: 20px;
+    float: left;
+    margin-left: 410px;
+    padding: 65px;
+}

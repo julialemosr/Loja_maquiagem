@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block conteudo%}
+
+    <div class="venda">
+<!--Form criar novo evento-->
+<form action="{{url_for('criar_vendas')}}" method="POST">
+    <label >Data da venda:</label>
+    <input type="text" name="form-data">
+
+    <label >Valor da venda:</label>
+    <input type="number" name="form-valor_final">
+
+    <label >Quantidade de produtos vendidos:</label>
+    <input type="number" name="form-quantidade_produto">
+
+    <label >Id do produto:</label>
+    <input type="number" name="form-id_produto">
+
+    <label >Id do cliente:</label>
+    <input type="number" name="form-id_cliente">
+
+    <button > Adicionar </button>
+    <button><a class="cancelar" href="{{url_for('vendas')}}">Cancelar</a></button>
+</form>
+    </div>
+{% endblock conteudo%}

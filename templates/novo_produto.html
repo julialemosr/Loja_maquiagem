@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block conteudo%}
+
+    <div class="produto">
+<!--Form criar novo evento-->
+<form action="{{url_for('criar_produtos')}}" method="POST">
+    <label >Valor do produto:</label>
+    <input type="number" name="form-valor_produto">
+
+    <label >Nome do produto:</label>
+    <input type="text" name="form-nome_produto">
+
+    <label >Quantidade de produto no estoque:</label>
+    <input type="number" name="form-quantidade_estoque">
+
+    <button > Adicionar </button>
+    <button><a class="cancelar" href="{{url_for('produtos')}}">Cancelar</a></button>
+</form>
+    </div>
+{% endblock conteudo%}

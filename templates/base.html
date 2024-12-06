@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/templates.css">
+</head>
+<body>
+<div class="container">
+   <header>
+        <h2> BOUTIQUE GLOW</h2>
+   </header>
+   <nav>
+      <ul>
+          <br>
+          <div class="palavras">
+          <h2>TABELAS</h2>
+            </div>
+          <br>
+          <li><a class="tabelas" href="{{ url_for('clientes') }}"><br>TABELA CLIENTE</a></li>
+          <br>
+          <li><a class="tabelas" href="{{ url_for('produtos') }}"><br>TABELA PRODUTO</a></li>
+          <br>
+          <li><a class="tabelas" href="{{ url_for('vendas') }}"><br>TABELA VENDA</a></li>
+          <br>
+          <br>
+          <div class="palavras">
+          <br>
+          <h2>CADASTROS</h2>
+              </div>
+          <br>
+          <li><a class="tabelas" href="{{ url_for('criar_clientes') }}"><br>CADASTRAR CLIENTE</a></li>
+          <br>
+          <li><a class="tabelas" href="{{ url_for('criar_produtos') }}"><br>CADASTRAR PRODUTO</a></li>
+          <br>
+          <li><a class="tabelas" href="{{ url_for('criar_vendas') }}"><br>CADASTRAR VENDA</a></li>
+          <br>
+          <br>
+      </ul>
+   </nav>
+
+<main>
+    {% for mensagem in get_flashed_messages()%}
+            {{mensagem}}
+    {% endfor %}
+
+    {% block conteudo%}
+    {% endblock%}
+</main>
+
+</div>
+</body>
+</html>

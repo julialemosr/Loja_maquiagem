@@ -1,0 +1,14 @@
+<!--Uso de templates-->
+{% extends 'base.html' %}
+
+{% block conteudo%}
+    {% for item in lista_vendas %}
+        <div class="card_itens">
+        Id da venda: {{item.id_venda}}<br>
+        Data da venda: {{item.data}}<br>
+        Valor final da venda: {{item.valor_final}}<br>
+        Quantidade de produtos vendidos: {{item.quantidade_produto}}<br>
+        </div>
+    {% endfor%}
+
+{% endblock conteudo%}

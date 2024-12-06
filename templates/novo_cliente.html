@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block conteudo%}
+
+    <div class="cliente">
+<!--Form criar novo evento-->
+<form action="{{url_for('criar_clientes')}}" method="POST">
+    <label >CPF do cliente:</label>
+    <input type="number" name="form-CPF">
+    <br>
+    <label >Nome do cliente:</label>
+    <input type="text" name="form-Nome">
+    <br>
+    <label >Telefone do cliente:</label>
+    <input type="number" name="form-telefone">
+    <br>
+    <button > Adicionar </button>
+    <button><a class="cancelar" href="{{url_for('clientes')}}">Cancelar</a></button>
+</form>
+    </div>
+{% endblock conteudo%}

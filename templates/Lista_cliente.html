@@ -1,0 +1,14 @@
+<!--Uso de templates-->
+{% extends 'base.html' %}
+
+{% block conteudo%}
+    {% for item in lista_clientes %}
+        <div class="card_itens">
+        Id do cliente: {{item.id_cliente}}<br>
+        Nome: {{item.CPF}}<br>
+        CPF: {{item.Nome}}<br>
+        Telefone: {{item.telefone}}<br>
+        </div>
+    {% endfor%}
+
+{% endblock conteudo%}
